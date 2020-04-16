@@ -11,12 +11,10 @@ class Search extends Component {
     breedSearch: '',
   };
 
-  // on component mount, get random image
   componentDidMount() {
     this.getListOfBreeds();
   }
 
-  // API call to get random dog image
   getListOfBreeds = () => {
     API.getBreedList()
       .then((res) => this.setState({ dogBreedList: res.data.message.flat() }))

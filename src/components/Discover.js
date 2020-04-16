@@ -64,7 +64,7 @@ class Discover extends Component {
           <Row className='justify-content-center align-items-center' style={{ minHeight: '30vh' }}>
             <Col xs={12} md={8} lg={6}>
               {!this.state.imageLoaded ? (
-                <Spinner animation='grow' variant='danger' />
+                <Spinner animation='grow' variant='success' />
               ) : (
                 <Card
                   className='bg-dark'
